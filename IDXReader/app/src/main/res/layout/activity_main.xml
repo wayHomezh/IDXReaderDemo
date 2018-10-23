@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/book_shelf"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.geno.idxreader.MainActivity">
+
+        <include layout="@layout/toolbar"/>
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:columnWidth="214dp"
+            android:stretchMode="spacingWidthUniform"
+            android:numColumns="3"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:id="@+id/select_footer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            >
+            <Button
+                android:id="@+id/select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textColor="#a00"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/borderlessButtonStyle"/>
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="#a00"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/borderlessButtonStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95000000"
+        android:visibility="gone"
+        android:orientation="horizontal" />
+</RelativeLayout>

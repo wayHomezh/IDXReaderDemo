@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0690a3</item>
+        <item name="colorPrimaryDark">#014650</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">#014650</item>
+        <item name="android:colorControlNormal">#fff</item>
+    </style>
+
+    <style name="OverflowMenu" parent="ThemeOverlay.AppCompat">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">10dp</item>
+        <item name="android:colorBackground">#014650</item>
+        <item name="android:textColor">#bbb</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:colorBackground">#014650</item>
+        <item name="android:textColor">#bbb</item>
+    </style>
+</resources>

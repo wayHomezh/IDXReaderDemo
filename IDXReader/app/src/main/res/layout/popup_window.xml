@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.geno.idxreader.MainActivity"
+    android:background="#0f395b"
+    android:minWidth="500dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="添加笔记"
+            android:textColor="#aaa"
+            android:background="#203984"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/dictionary_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="点击查询"
+            android:textColor="#aaa"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="#17285C"/>
+        <Button
+            android:id="@+id/day_night"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="夜间模式"
+            android:textColor="#aaa"
+            android:background="#203984"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/auto_page_turning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="自动翻页"
+            android:textColor="#aaa"
+            android:background="#203984"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/selected_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ec824d"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxWidth="420dp"/>
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+</LinearLayout>

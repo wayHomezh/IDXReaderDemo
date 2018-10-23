@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <com.example.geno.idxreader.MyViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:id="@+id/page_turning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#8708394b"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="调速"
+                android:gravity="center"
+                android:textColor="#bbb"/>
+            <Button
+                android:id="@+id/reduce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="-" />
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:gravity="center"
+                android:textColor="#bbb" />
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="+" />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/cancel_auto_page_turning"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="取消自动翻页"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:background="#87296fa1"
+                android:textColor="#bbb" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/seekBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:visibility="gone"
+        android:background="#2F4F4F">
+        <TextView
+            android:id="@+id/book_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:background="#915f28"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:padding="2dp"
+            android:textColor="#aaa"/>
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

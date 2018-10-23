@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#123d36">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/show_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="400dp"
+            android:textSize="16sp"
+            android:textColor="#aaa"
+            android:padding="5dp"/>
+    </ScrollView>
+</LinearLayout>

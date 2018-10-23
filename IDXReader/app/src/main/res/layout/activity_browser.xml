@@ -1,0 +1,28 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:text="返回上一级"
+            android:background="#bbb"/>
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/browser_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b1000000"
+        android:orientation="horizontal" />
+</RelativeLayout>
+
